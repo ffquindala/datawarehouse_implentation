@@ -1,5 +1,5 @@
 # datawarehouse_implentation
-## Situa Problématica
+## Situação Problématica
 
 Contexto:
 Se temo uma base de dados que armazena as informações dos produtos que entraram e saíram de um supermercado, atualmente a gerência reúne com informações em planilhas de excel, as vezes as informações não batem certo
