@@ -13,5 +13,14 @@ SQL Server 2019
 
 T-SQL 
 
+SQL Arquitect
+
 Visual Studio 2022
+
+# Modelagem do Projecto (Data warehouse)
+
+A modelagem consiste na ilustração gráfica do funcionamento de qualquer sistema de informação, para facilitar o seu entendido e funcionamento, por parte de quem é alheio ao sistema e ajuda na manuntenção do mesmo para futuras escalabilidade. Para modelagem deste projecto se utilizou o SQL Arquitect.
+
+![Modelling](https://github.com/ffquindala/store_datawarehouse_implentation/assets/80399273/f10c3d48-5828-4c6f-ab91-a3cd8478095a)
+
 
