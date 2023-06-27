@@ -1,4 +1,4 @@
-# Store Datawarehouse Implentation
+# Store Datawarehouse Implementation
 ## Situação Problématica
 
 Contexto:
