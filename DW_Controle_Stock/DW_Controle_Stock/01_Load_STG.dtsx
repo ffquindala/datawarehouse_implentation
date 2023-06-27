@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{2B44981D-3D03-4348-94D6-FF8663846239}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{C1677E2C-C45F-4AE7-8A65-1837735522B6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -5953,7 +5953,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[STG_Fact Saida]</property>
+                      name="OpenRowset">[STGFactSaida]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -9329,7 +9329,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
-              SQLTask:SqlStatementSource="Truncate Table STG_Fact Saida" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="Truncate Table STG_FactSaida" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -9346,7 +9346,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
-              SQLTask:SqlStatementSource="Truncte Table STG_Fornecedor" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="Truncate Table STG_Fornecedor" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -9505,40 +9505,40 @@
         <NodeLayout
           Size="183,42"
           Id="Package\Load STG Facts\Load Fact Stage Saida"
-          TopLeft="310,28" />
+          TopLeft="309,27" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="554,86"
-          Size="554,129"
+          PanelSize="554,124"
+          Size="554,167"
           Id="Package\Load STG Facts"
-          TopLeft="304,612.5" />
+          TopLeft="302,609.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="528.5,529.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="52.5,83"
+              EndConnector="50.5,80"
               Start="0,0"
-              End="52.5,75.5">
+              End="50.5,72.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.5" />
+                    End="0,36" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,37.5"
-                    Point2="0,41.5"
-                    Point3="4,41.5" />
+                    Point1="0,36"
+                    Point2="0,40"
+                    Point3="4,40" />
                   <mssgle:LineSegment
-                    End="48.5,41.5" />
+                    End="46.5,40" />
                   <mssgle:CubicBezierSegment
-                    Point1="48.5,41.5"
-                    Point2="52.5,41.5"
-                    Point3="52.5,45.5" />
+                    Point1="46.5,40"
+                    Point2="50.5,40"
+                    Point3="50.5,44" />
                   <mssgle:LineSegment
-                    End="52.5,75.5" />
+                    End="50.5,72.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9578,40 +9578,40 @@
         <NodeLayout
           Size="195,42"
           Id="Package\Truncate all Tables\Truncate STG Fact Saida"
-          TopLeft="700,92" />
+          TopLeft="701,91" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="938,185"
-          Size="938,228"
+          PanelSize="938,191"
+          Size="938,234"
           Id="Package\Truncate all Tables"
           TopLeft="88,24" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="557,252">
+          TopLeft="557,258">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-28.5,57.5"
+              EndConnector="-28.5,51.5"
               Start="0,0"
-              End="-28.5,50">
+              End="-28.5,44">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.75" />
+                    End="0,21.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.75"
-                    Point2="0,28.75"
-                    Point3="-4,28.75" />
+                    Point1="0,21.75"
+                    Point2="0,25.75"
+                    Point3="-4,25.75" />
                   <mssgle:LineSegment
-                    End="-24.5,28.75" />
+                    End="-24.5,25.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="-24.5,28.75"
-                    Point2="-28.5,28.75"
-                    Point3="-28.5,32.75" />
+                    Point1="-24.5,25.75"
+                    Point2="-28.5,25.75"
+                    Point3="-28.5,29.75" />
                   <mssgle:LineSegment
-                    End="-28.5,50" />
+                    End="-28.5,44" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9703,7 +9703,7 @@
     design-time-name="Package\Load STG Dimensios\Load Dimension STG Producto">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="185,42"
           Id="Package\Load STG Dimensios\Load Dimension STG Producto\Source Stock Producto"
@@ -9743,7 +9743,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9843,7 +9845,7 @@
     design-time-name="Package\Load STG Dimensios\Load Dimension STG_Fornecedor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150,42"
           Id="Package\Load STG Dimensios\Load Dimension STG_Fornecedor\OLE DB Source"
@@ -9883,7 +9885,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10073,51 +10077,87 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="209,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Source Stock Entrada Stock"
-          TopLeft="248,25" />
+          Size="139,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Merge Join 1"
+          TopLeft="595,498" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort 1"
+          TopLeft="628,594" />
         <NodeLayout
           Size="205,42"
           Id="Package\Load STG Facts\Load Fact Stage Entrada\Source Stock Item Entrada"
           TopLeft="602,29" />
         <NodeLayout
-          Size="170,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Merge Join"
-          TopLeft="377,261" />
+          Size="206,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort  Entrada_EntradaItem"
+          TopLeft="355,366" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Source Stock Categoria"
+          TopLeft="284,489" />
         <NodeLayout
           Size="138,42"
           Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort Entrada"
           TopLeft="255,140" />
         <NodeLayout
+          Size="209,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Source Stock Entrada Stock"
+          TopLeft="248,25" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Merge Join"
+          TopLeft="377,261" />
+        <NodeLayout
           Size="163,42"
           Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort Item Entrada"
           TopLeft="630,141" />
+        <NodeLayout
+          Size="143,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort Producto"
+          TopLeft="712,389" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\OLE DB Destination"
+          TopLeft="925,666" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort"
+          TopLeft="376,596" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Source Stock Producto"
+          TopLeft="644,267" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Load STG Facts\Load Fact Stage Entrada\Merge Join 2"
+          TopLeft="551,684" />
         <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[OLE DB Source Output]"
-          TopLeft="352.5,67">
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output5]"
+          TopLeft="681.5,636">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-28.5,73"
+              EndConnector="-39.1666666666666,48"
               Start="0,0"
-              End="-28.5,65.5">
+              End="-39.1666666666666,40.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.5" />
+                    End="0,24.4722617354196" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,32.5"
-                    Point2="0,36.5"
-                    Point3="-4,36.5" />
+                    Point1="0,24.4722617354196"
+                    Point2="0,28.4722617354196"
+                    Point3="-4,28.4722617354196" />
                   <mssgle:LineSegment
-                    End="-24.5,36.5" />
+                    End="-35.1666666666666,28.4722617354196" />
                   <mssgle:CubicBezierSegment
-                    Point1="-24.5,36.5"
-                    Point2="-28.5,36.5"
-                    Point3="-28.5,40.5" />
+                    Point1="-35.1666666666666,28.4722617354196"
+                    Point2="-39.1666666666666,28.4722617354196"
+                    Point3="-39.1666666666666,32.4722617354196" />
                   <mssgle:LineSegment
-                    End="-28.5,65.5" />
+                    End="-39.1666666666666,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10127,19 +10167,133 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[OLE DB Source Output1]"
-          TopLeft="708,71">
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output4]"
+          TopLeft="425,638">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,70"
+              EndConnector="195.5,46"
               Start="0,0"
-              End="0,62.5">
+              End="195.5,38.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,62.5" />
+                    End="0,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19"
+                    Point2="0,23"
+                    Point3="4,23" />
+                  <mssgle:LineSegment
+                    End="191.5,23" />
+                  <mssgle:CubicBezierSegment
+                    Point1="191.5,23"
+                    Point2="195.5,23"
+                    Point3="195.5,27" />
+                  <mssgle:LineSegment
+                    End="195.5,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output3]"
+          TopLeft="783.5,431">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-97.1666666666666,67"
+              Start="0,0"
+              End="-97.1666666666666,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.7425320056899" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.7425320056899"
+                    Point2="0,39.7425320056899"
+                    Point3="-4,39.7425320056899" />
+                  <mssgle:LineSegment
+                    End="-93.1666666666666,39.7425320056899" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-93.1666666666666,39.7425320056899"
+                    Point2="-97.1666666666666,39.7425320056899"
+                    Point3="-97.1666666666666,43.7425320056899" />
+                  <mssgle:LineSegment
+                    End="-97.1666666666666,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output2]"
+          TopLeft="458,408">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="184.666666666667,90"
+              Start="0,0"
+              End="184.666666666667,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.3854907539118" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.3854907539118"
+                    Point2="0,53.3854907539118"
+                    Point3="4,53.3854907539118" />
+                  <mssgle:LineSegment
+                    End="180.666666666667,53.3854907539118" />
+                  <mssgle:CubicBezierSegment
+                    Point1="180.666666666667,53.3854907539118"
+                    Point2="184.666666666667,53.3854907539118"
+                    Point3="184.666666666667,57.3854907539118" />
+                  <mssgle:LineSegment
+                    End="184.666666666667,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output1]"
+          TopLeft="711.5,183">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-222.5,78"
+              Start="0,0"
+              End="-222.5,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.3636363636364" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.3636363636364"
+                    Point2="0,46.3636363636364"
+                    Point3="-4,46.3636363636364" />
+                  <mssgle:LineSegment
+                    End="-218.5,46.3636363636364" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-218.5,46.3636363636364"
+                    Point2="-222.5,46.3636363636364"
+                    Point3="-222.5,50.3636363636364" />
+                  <mssgle:LineSegment
+                    End="-222.5,70.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10183,31 +10337,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output1]"
-          TopLeft="711.5,183">
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[OLE DB Source Output3]"
+          TopLeft="378,531">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-222.5,78"
+              EndConnector="47,65"
               Start="0,0"
-              End="-222.5,70.5">
+              End="47,57.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.3636363636364" />
+                    End="0,28.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,42.3636363636364"
-                    Point2="0,46.3636363636364"
-                    Point3="-4,46.3636363636364" />
+                    Point1="0,28.5"
+                    Point2="0,32.5"
+                    Point3="4,32.5" />
                   <mssgle:LineSegment
-                    End="-218.5,46.3636363636364" />
+                    End="43,32.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-218.5,46.3636363636364"
-                    Point2="-222.5,46.3636363636364"
-                    Point3="-222.5,50.3636363636364" />
+                    Point1="43,32.5"
+                    Point2="47,32.5"
+                    Point3="47,36.5" />
                   <mssgle:LineSegment
-                    End="-222.5,70.5" />
+                    End="47,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10216,40 +10370,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="206,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort  Entrada_EntradaItem"
-          TopLeft="355,366" />
-        <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Merge Join Output]"
-          TopLeft="460,303">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,63"
-              Start="0,0"
-              End="0,55.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Source Stock Producto"
-          TopLeft="644,267" />
-        <NodeLayout
-          Size="143,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort Producto"
-          TopLeft="712,389" />
         <EdgeLayout
           Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[OLE DB Source Output2]"
           TopLeft="736.5,309">
@@ -10284,36 +10404,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Merge Join 1"
-          TopLeft="595,498" />
         <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output2]"
-          TopLeft="458,408">
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[OLE DB Source Output1]"
+          TopLeft="708,71">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="184.666666666667,90"
+              EndConnector="0,70"
               Start="0,0"
-              End="184.666666666667,82.5">
+              End="0,62.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.3854907539118" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,49.3854907539118"
-                    Point2="0,53.3854907539118"
-                    Point3="4,53.3854907539118" />
-                  <mssgle:LineSegment
-                    End="180.666666666667,53.3854907539118" />
-                  <mssgle:CubicBezierSegment
-                    Point1="180.666666666667,53.3854907539118"
-                    Point2="184.666666666667,53.3854907539118"
-                    Point3="184.666666666667,57.3854907539118" />
-                  <mssgle:LineSegment
-                    End="184.666666666667,82.5" />
+                    End="0,62.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10323,31 +10427,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output3]"
-          TopLeft="783.5,431">
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[OLE DB Source Output]"
+          TopLeft="352.5,67">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-97.1666666666666,67"
+              EndConnector="-28.5,73"
               Start="0,0"
-              End="-97.1666666666666,59.5">
+              End="-28.5,65.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.7425320056899" />
+                    End="0,32.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,35.7425320056899"
-                    Point2="0,39.7425320056899"
-                    Point3="-4,39.7425320056899" />
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="-4,36.5" />
                   <mssgle:LineSegment
-                    End="-93.1666666666666,39.7425320056899" />
+                    End="-24.5,36.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-93.1666666666666,39.7425320056899"
-                    Point2="-97.1666666666666,39.7425320056899"
-                    Point3="-97.1666666666666,43.7425320056899" />
+                    Point1="-24.5,36.5"
+                    Point2="-28.5,36.5"
+                    Point3="-28.5,40.5" />
                   <mssgle:LineSegment
-                    End="-97.1666666666666,59.5" />
+                    End="-28.5,65.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10356,44 +10460,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Source Stock Categoria"
-          TopLeft="284,489" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort"
-          TopLeft="376,596" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Sort 1"
-          TopLeft="628,594" />
         <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[OLE DB Source Output3]"
-          TopLeft="378,531">
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Merge Join Output2]"
+          TopLeft="690,705">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="47,65"
+              EndConnector="235,-18"
               Start="0,0"
-              End="47,57.5">
+              End="227.5,-18">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="113.5,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.5"
-                    Point2="0,32.5"
-                    Point3="4,32.5" />
+                    Point1="113.5,0"
+                    Point2="117.5,0"
+                    Point3="117.5,-4" />
                   <mssgle:LineSegment
-                    End="43,32.5" />
+                    End="117.5,-14" />
                   <mssgle:CubicBezierSegment
-                    Point1="43,32.5"
-                    Point2="47,32.5"
-                    Point3="47,36.5" />
+                    Point1="117.5,-14"
+                    Point2="117.5,-18"
+                    Point3="121.5,-18" />
                   <mssgle:LineSegment
-                    End="47,57.5" />
+                    End="227.5,-18" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10436,108 +10528,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\Merge Join 2"
-          TopLeft="551,684" />
         <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output4]"
-          TopLeft="425,638">
+          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Merge Join Output]"
+          TopLeft="460,303">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="195.5,46"
+              EndConnector="0,63"
               Start="0,0"
-              End="195.5,38.5">
+              End="0,55.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="4,23" />
-                  <mssgle:LineSegment
-                    End="191.5,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="191.5,23"
-                    Point2="195.5,23"
-                    Point3="195.5,27" />
-                  <mssgle:LineSegment
-                    End="195.5,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Sort Output5]"
-          TopLeft="681.5,636">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-39.1666666666666,48"
-              Start="0,0"
-              End="-39.1666666666666,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.4722617354196" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24.4722617354196"
-                    Point2="0,28.4722617354196"
-                    Point3="-4,28.4722617354196" />
-                  <mssgle:LineSegment
-                    End="-35.1666666666666,28.4722617354196" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-35.1666666666666,28.4722617354196"
-                    Point2="-39.1666666666666,28.4722617354196"
-                    Point3="-39.1666666666666,32.4722617354196" />
-                  <mssgle:LineSegment
-                    End="-39.1666666666666,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Load STG Facts\Load Fact Stage Entrada\OLE DB Destination"
-          TopLeft="925,666" />
-        <EdgeLayout
-          Id="Package\Load STG Facts\Load Fact Stage Entrada.Paths[Merge Join Output2]"
-          TopLeft="690,705">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="235,-18"
-              Start="0,0"
-              End="227.5,-18">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="113.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="113.5,0"
-                    Point2="117.5,0"
-                    Point3="117.5,-4" />
-                  <mssgle:LineSegment
-                    End="117.5,-14" />
-                  <mssgle:CubicBezierSegment
-                    Point1="117.5,-14"
-                    Point2="117.5,-18"
-                    Point3="121.5,-18" />
-                  <mssgle:LineSegment
-                    End="227.5,-18" />
+                    End="0,55.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11034,10 +11038,10 @@
         <NodeLayout
           Size="206,42"
           Id="Package\Load STG Facts\Load Fact Stage Saida\Destination STG Fact Saida"
-          TopLeft="327,697" />
+          TopLeft="326,697" />
         <EdgeLayout
           Id="Package\Load STG Facts\Load Fact Stage Saida.Paths[Merge Join Output2]"
-          TopLeft="431.25,608">
+          TopLeft="430.75,608">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"

@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>DW_Controle_Stock</Name>
-    <LastWriteTime>2023-06-25T21:15:04.7160532Z</LastWriteTime>
+    <LastWriteTime>2023-06-25T23:04:03.1487933Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>01_Load_STG.dtsx</Name>
-      <LastWriteTime>2023-06-25T21:15:04.6751643Z</LastWriteTime>
+      <LastWriteTime>2023-06-27T14:27:22.4872742Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Exec Controle Stock.dtsx</Name>
+      <LastWriteTime>2023-06-25T23:04:03.1373387Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
