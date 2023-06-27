@@ -23,7 +23,7 @@ A modelagem consiste na ilustração gráfica do funcionamento de qualquer siste
 
 ![Modelling](https://github.com/ffquindala/store_datawarehouse_implentation/assets/80399273/f10c3d48-5828-4c6f-ab91-a3cd8478095a)
 
-# ETL para Stage Are
+# ETL para Stage Area
 
 Staging Area, serve como uma área de preparação (intermediária) antes de armazenar em DW, tem ainda como finalidade proteger o DW de erros nos dados. De forma geral é na SA onde ocorre maior parte das transformações para posteriormente fazer carregamendo em DW.
 
