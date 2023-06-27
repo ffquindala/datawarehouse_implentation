@@ -11,8 +11,8 @@
   DTS:LocaleID="2070"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{30808FF5-6EF3-4E94-9D59-53FA23572380}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{2B44981D-3D03-4348-94D6-FF8663846239}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9288,6 +9288,154 @@
         </DTS:Executable>
       </DTS:Executables>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate all Tables"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{8296A034-53FC-4D89-9560-5270BE7BF450}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate all Tables">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Trncate STG Fact Entrada"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{A234CB6C-1603-46A0-98CD-78AC843502E7}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Trncate STG Fact Entrada"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="3">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncate Table STG_Fact_Entrada" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Truncate STG Fact Saida"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{507517D6-BA5D-45D4-B820-BD0D65F4D002}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate STG Fact Saida"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncate Table STG_Fact Saida" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Truncate STG Fornecedor"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{7B23A0EC-E380-4ED9-97AF-2AA3DAEAFFB1}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate STG Fornecedor"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="5">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncte Table STG_Fornecedor" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Truncate STG Loja"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{f0b21490-1a48-4211-bb4c-7c4637aecf78}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate STG Loja"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncate Table STG_Loja" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Truncate STG_Categoria"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{A2D615E4-6638-4497-80F2-FFDF310E4BA2}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate STG_Categoria"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncate Table STG_Categoria" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Truncate STG_Lote"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{a07ee5f0-4a15-4f4e-bc11-73675708f94f}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate STG_Lote"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="7">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncate Table STG_Lote" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Truncate STG_Producto"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{52641E54-2FBD-441D-A188-B4F44637BEE1}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate STG_Producto"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="6">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncate Table STG_Producto" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Truncate all Tables\Truncate STG_SubCategoria"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{0921f5d5-badf-4ee9-8628-5684d3a3f953}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate STG_SubCategoria"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="4">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{920A47B1-C8D8-459D-B884-7BA8888E3547}"
+              SQLTask:SqlStatementSource="Truncate Table STG_Sub_Categoria" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -9298,6 +9446,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Load STG Facts" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{BE5D929D-8D74-4B5D-9694-1D402E829BE0}"
+      DTS:From="Package\Truncate all Tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load STG Dimensios" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -9310,7 +9466,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="200,42"
           Id="Package\Load STG Dimensios\Load Dimension STG Lote"
@@ -9338,10 +9494,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="791,227"
-          Size="791,270"
+          PanelSize="791,177"
+          Size="791,220"
           Id="Package\Load STG Dimensios"
-          TopLeft="249,66" />
+          TopLeft="133,309.5" />
         <NodeLayout
           Size="194,42"
           Id="Package\Load STG Facts\Load Fact Stage Entrada"
@@ -9353,24 +9509,109 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="554,125"
-          Size="554,168"
+          PanelSize="554,86"
+          Size="554,129"
           Id="Package\Load STG Facts"
-          TopLeft="372,403" />
+          TopLeft="304,612.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="646.75,336">
+          TopLeft="528.5,529.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,67"
+              EndConnector="52.5,83"
               Start="0,0"
-              End="0,59.5">
+              End="52.5,75.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.5" />
+                    End="0,37.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.5"
+                    Point2="0,41.5"
+                    Point3="4,41.5" />
+                  <mssgle:LineSegment
+                    End="48.5,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.5,41.5"
+                    Point2="52.5,41.5"
+                    Point3="52.5,45.5" />
+                  <mssgle:LineSegment
+                    End="52.5,75.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="194,42"
+          Id="Package\Truncate all Tables\Truncate STG_Categoria"
+          TopLeft="45,10" />
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Truncate all Tables\Truncate STG_SubCategoria"
+          TopLeft="256,15" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Truncate all Tables\Truncate STG_Producto"
+          TopLeft="490,16" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Truncate all Tables\Truncate STG Fornecedor"
+          TopLeft="709,20" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Truncate all Tables\Truncate STG Loja"
+          TopLeft="54,91" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Truncate all Tables\Truncate STG_Lote"
+          TopLeft="240,94" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Truncate all Tables\Trncate STG Fact Entrada"
+          TopLeft="458,91" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Truncate all Tables\Truncate STG Fact Saida"
+          TopLeft="700,92" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="938,185"
+          Size="938,228"
+          Id="Package\Truncate all Tables"
+          TopLeft="88,24" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="557,252">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-28.5,57.5"
+              Start="0,0"
+              End="-28.5,50">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.75"
+                    Point2="0,28.75"
+                    Point3="-4,28.75" />
+                  <mssgle:LineSegment
+                    End="-24.5,28.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24.5,28.75"
+                    Point2="-28.5,28.75"
+                    Point3="-28.5,32.75" />
+                  <mssgle:LineSegment
+                    End="-28.5,50" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
