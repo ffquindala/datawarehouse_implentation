@@ -17,7 +17,7 @@ SQL Arquitect
 
 Visual Studio 2022
 
-# Modelagem do Projecto (Data warehouse)
+# Modelagem do Projecto (Data Warehouse)
 
 A modelagem consiste na ilustração gráfica do funcionamento de qualquer sistema de informação, para facilitar o seu entendido e funcionamento, por parte de quem é alheio ao sistema e ajuda na manuntenção do mesmo para futuras escalabilidade. Para modelagem deste projecto se utilizou o SQL Arquitect.
 
