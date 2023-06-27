@@ -11,7 +11,7 @@ SQL Server Integration Services (SSIS)
 
 SQL Server 2019
 
-SQL 
+T-SQL 
 
 Visual Studio 2022
 
